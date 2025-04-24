@@ -1,0 +1,22 @@
+CREATE TABLE Cliente(
+  cliente_id INT CLIENTE_INCREMET PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  direccion VARCHAR(50) NOT NULL
+
+);
+
+CREATE TABLE Pedido(
+  Pedido_id INT CLIENTE_INCREMET PRIMARY KEY,
+	fecha DATE,
+	
+  
+);
+
+CREATE TABLE Producto(
+  Producto_id INT CLIENTE_INCREMET PRIMARY KEY,
+  precio VARCHAR(20000000) NOT NULL,
+cliente_id INT not null,
+
+
+  FOREIGN KEY(cliente_id) REFERENCES cliente(cliente_id)
+);
