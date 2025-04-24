@@ -1,0 +1,14 @@
+CREATE TABLE Autor(
+  autor_id INT AUTOR_INCREMET PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  nacionalidad VARCHAR(50) NOT NULL
+
+);
+
+CREATE TABLE Libro(
+  libro_id INT AUTOR_INCREMET PRIMARY KEY,
+  titulo VARCHAR(200) not null,
+  genereo VARCHAR(50) not null,
+ autor_id INT not null,
+  FOREIGN KEY(autor_id) REFERENCES autor(autor_id)
+);
